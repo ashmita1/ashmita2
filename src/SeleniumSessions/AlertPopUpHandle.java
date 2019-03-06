@@ -10,14 +10,14 @@ public class AlertPopUpHandle {
 	public static void main(String[] args) throws InterruptedException {
 
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/bvennapureddy/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "/Users/bvennapureddy/Desktop/TRAINING/chromedriver");	
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		
 		driver.findElement(By.name("proceed")).click(); //click on Go btn
+		driver.manage().window().maximize();
 		
-		Thread.sleep(5000);
 		
 		Alert alert = driver.switchTo().alert();
 		
@@ -33,7 +33,7 @@ public class AlertPopUpHandle {
 		}
 		
 		alert.accept(); //click on OK btn
-		
+		driver.close();
 		//alert.dismiss(); //click on cancel btn
 		
 	}

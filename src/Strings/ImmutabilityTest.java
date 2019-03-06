@@ -3,6 +3,7 @@ package Strings;
 public class ImmutabilityTest {
 
     private String changingRef = "TEST_STRING";
+    String Env = "QA";
 
     public static void main(String a[]) {
 

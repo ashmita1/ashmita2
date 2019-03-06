@@ -11,12 +11,23 @@ public class Car_Example_3 {
     String sTransmission;
     int iTyres;
     int iDoors;
+    
+    static Car_Example_3 sample;
+    
 
-    //Default values set in Constructor
+   // Default values set in Constructor
     public Car_Example_3(){
     	sModel = "Camry";
     	iMake = 2014;
     	bLeftHandDrive = true;
+    }
+    
+//    private Car_Example_3(){
+//    	
+//    }
+    
+    public static Car_Example_3 getObjectInstance() {
+		return sample;
     }
 
     public void DisplayCharacterstics(){
@@ -28,20 +39,27 @@ public class Car_Example_3 {
     	System.out.println("Transmission of the Car: " +  sTransmission);
 
     }
+}
+class Example1 {
     
     public static void main(String[] args) {
+    	Car_Example_3 Toyota = new Car_Example_3();
     	 //Use the Car keyword to declare Car Class variable
-    	 Car_Example_3 Toyota = new Car_Example_3();;
-    	 
-    	 Toyota.iDoors = 4;
-    	 Toyota.iGear = 5;
-    	 Toyota.iHighestSpeed = 200;
-    	 Toyota.iTyres = 4;
-    	 Toyota.sColor = "Black";
-    	 Toyota.sTransmission = "Manual";
-    	 
-    	 //Using Car class method
-    	 Toyota.DisplayCharacterstics();
+//    	 Car_Example_3 Toyota = new Car_Example_3();;
+//    	 
+//    	 Toyota.iDoors = 4;
+//    	 Toyota.iGear = 5;
+//    	 Toyota.iHighestSpeed = 200;
+//    	 Toyota.iTyres = 4;
+//    	 Toyota.sColor = "Black";
+//    	 Toyota.sTransmission = "Manual";
+//    	// Toyota.sModel = "Audi";
+//    	 
+//    	 //Using Car class method
+//    	 Toyota.DisplayCharacterstics();
+    	
+    	
+    	Toyota.DisplayCharacterstics();
     	 
     	 }
 

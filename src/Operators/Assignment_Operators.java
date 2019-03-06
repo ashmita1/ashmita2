@@ -16,6 +16,9 @@ public class Assignment_Operators {
  System.out.println("Value stored in the name variable is : " + name);
  System.out.println("Value stored in the isGood variable is : " + isGood);
  
+ System.out.println("----------------------------------------------------");
+ 
+ 
  speed = 100; // Previous value of speed is overwritten with 100
  time = distance; // Previous value of time is overwritten with distance value
  name = "ForumsQA"; // Previous value of name is overwritten with ForumsQA
@@ -25,13 +28,19 @@ public class Assignment_Operators {
  System.out.println("Value stored in the name variable is : " + name);
  System.out.println("Value stored in the isGood variable is : " + isGood);
  
+ System.out.println("----------------------------------------------------");
+
+ 
  //Multiple Assignments
  speed = distance = 0; // 100 (20 = 0) 
  System.out.println("Value stored in the speed variable is : " + speed);
+ System.out.println("Value stored in the speed variable is : " + distance);
+
  
  //Illegal Assignments - Compile time errors
  speed = "QA"; //String can not be assign to integer
  name = 10; // Integer can not be assign to String
  isGood = "Qa" // String can not be assign to Boolean
+// }
  }
  }

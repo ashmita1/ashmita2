@@ -10,7 +10,7 @@ public class MouseMovementConcept {
 	public static void main(String[] args) throws InterruptedException {
 
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "/Users/bvennapureddy/Desktop/TRAINING/chromedriver");	
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -19,7 +19,7 @@ public class MouseMovementConcept {
 		
 		Actions action = new Actions(driver);
 		
-		action.moveToElement(driver.findElement(By.linkText("About Us"))).build().perform();
+		action.moveToElement(driver.findElement(By.xpath("//td[contains(text(),'About Us')]"))).perform();
 		
 		Thread.sleep(3000);
 		

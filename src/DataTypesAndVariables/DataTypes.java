@@ -47,7 +47,7 @@ public class DataTypes {
 		 String s3 = "100";
 		 String s4 = "12.33";
 		 
-		 System.out.println(s2);
+		 System.out.println(s2.hashCode());
 		 
 		 System.out.println(1000);
 		 System.out.println(12.45);

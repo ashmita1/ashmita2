@@ -37,6 +37,12 @@ public class Relational_Operators {
 		 System.out.println("<<<<<< NOT EQUAL TO OPERATOR >>>>>>");
 		 System.out.println(" Ten != Twenty ==> " + (Ten != Twenty)); //true
 		 System.out.println(" Thirty != Twenty + Ten ==> " + (Thirty != Twenty + Ten)); //false
+		 
+		 if(Ten != Twenty)
+			 
+		 {
+			 System.out.println("Hi");
 		 }
-
+		 
+		 }
 }

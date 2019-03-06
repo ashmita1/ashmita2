@@ -5,6 +5,7 @@ public class Switch_Statement {
 	public static void main(String[] args) {
 		int iDay = 1;
 		String sDay = "Monday";
+		
 
  		switch(iDay){
  			case 1:
@@ -29,6 +30,7 @@ public class Switch_Statement {
 				System.out.println("Today is Sunday");
 				break;
  				}
+System.out.println("-------------------------------");
 
  		switch(sDay){
 			case "Monday":

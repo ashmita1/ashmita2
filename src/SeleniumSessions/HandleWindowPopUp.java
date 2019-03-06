@@ -15,12 +15,14 @@ public class HandleWindowPopUp {
 		//2. File Upload pop up -- Browse Button (type = file, sendKeys(path)
 		//3. Browser Window Popup - Advertisement pop up (windowHandler API - getWindowHandles() )
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "/Users/bvennapureddy/Desktop/TRAINING/chromedriver");	
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		
 		driver.get("http://www.popuptest.com/goodpopups.html");
 		
-		driver.findElement(By.xpath("html/body/table[2]/tbody/tr/td/font/b/a[3]")).click();
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/font[1]/b[1]/a[3]")).click();
 		
 		Thread.sleep(2000);
 		
@@ -29,17 +31,19 @@ public class HandleWindowPopUp {
 		Iterator<String> it = handler.iterator();
 		
 		String parentWindowId = it.next();
-		System.out.println("parent window id:"+ parentWindowId);
+		System.out.println("parent window id:----"+ parentWindowId);
 		
 		
 		String childWindowId = it.next();
-		System.out.println("Child window id:"+childWindowId);
+		System.out.println("Child window id:----"+childWindowId);
 		
 		driver.switchTo().window(childWindowId);
 		
 		Thread.sleep(2000);
 		
-		System.out.println("child window pop up title"+driver.getTitle());
+		System.out.println("child window pop up title: ------"+driver.getTitle());
+		
+		driver.manage().window().maximize();
 		
 		driver.close();
 		
@@ -49,6 +53,7 @@ public class HandleWindowPopUp {
 		
 		System.out.println("parent window title"+driver.getTitle());
 		
+		driver.close();
 		
 		
 	}

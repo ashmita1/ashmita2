@@ -11,9 +11,12 @@ public class ArrayListConcept {
 		
 		ArrayList ar = new ArrayList();
 		
-		ar.add(100);//0
-		ar.add(200);//1
-		ar.add(300);//2
+		ArrayList<String> a = new ArrayList<>();
+		
+		
+		ar.add(1);//0
+		ar.add(2);//1
+		ar.add(3);//2
 		
 		System.out.println(ar.size()); //size of arraylist
 		
@@ -23,6 +26,7 @@ public class ArrayListConcept {
 		System.out.println(ar.size());
 		
 		ar.remove(3);
+		ar.clear();
 		
 		System.out.println(ar.size());
 		

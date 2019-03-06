@@ -18,5 +18,7 @@ public class Conditional_Operators {
 		     //This is a use of Not Logical Operator
 		     iValue = (!(Thirty == Twenty + Ten)) ? 50: 100;
 		     System.out.println( "The int Value of the variable iValue is : " + iValue ); //100
+		     
+		    
 		 }
 }

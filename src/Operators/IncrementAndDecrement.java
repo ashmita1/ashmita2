@@ -5,11 +5,13 @@ public class IncrementAndDecrement {
 	public static void main(String[] args) {
 
 		
-		int i = 1;
+		int i = 2;
 		int j = i++; //post increment
 		
 		System.out.println(i);//2
 		System.out.println(j);//1
+		
+		System.out.println(++i + j);
 		
 		int m = 1;
 		int n = ++m; //pre increment

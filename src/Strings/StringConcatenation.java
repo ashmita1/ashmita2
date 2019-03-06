@@ -13,7 +13,7 @@ public class StringConcatenation {
 		System.out.println(a+b);
 		System.out.println(x+y);
 		System.out.println(a+b+x+y); //300HelloWorld 
-		System.out.println(x+y+a+b); //HellowWorld100200
+		System.out.println(x+y+(a+b)); //HellowWorld100200
 		System.out.println(x+y+(a+b));
 		
 	}

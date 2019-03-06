@@ -9,7 +9,7 @@ public class IfElse {
 		int a = 30;
 		int b = 20;
 		
-		if(b>a){
+		if(a>b){
 			System.out.println("b is greather than a");
 		}
 		else{
@@ -31,7 +31,7 @@ public class IfElse {
 		int q = 20;
 		int z = p+q;
 		
-		if(z >= 30){
+		if(z >= 30 && a>b){
 			System.out.println("Passed");
 		}
 		else{
@@ -39,13 +39,13 @@ public class IfElse {
 		}
 		
 		
-		if(true){
+		if(1>0){
 			System.out.println("Passed the conditon");
 		}
-		//dead code:
-//		else{
-//			System.out.println("Failed");
-//		}
+		
+	else{
+		System.out.println("Failed");
+		}
 		
 		
 	}

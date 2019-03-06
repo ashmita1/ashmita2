@@ -20,6 +20,34 @@ public class Continue_Loop {
 				continue;				
 				}
 			}
+		
+		
+		
+		
+		//illegal 
+		
+		String str = "www.c4learn.com";
+
+        int max = str.length();
+        int count = 0;
+
+        continue;
+
+        System.out.println("Hello continue");
+        
+        
+        //don't use inside if when not part of the loop 
+        
+        String str1 = "www.c4learn.com";
+
+        int max1 = str.length();
+        int count1 = 0;
+
+        if(str1.charAt(i) != 'p')
+            continue;
+
+        System.out.println("Hello continue");
+		
 		}
 
 }

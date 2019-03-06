@@ -4,8 +4,20 @@ public class String_Example {
 	
 	public static void main(String[] args) {
 		String s1 = "java";
-		s1.concat(" rules");
+		s1.concat(" rules"); 
 		System.out.println("s1 refers to "+s1);  // Yes, s1 still refers to "java"
+		
+		String sample = "bheem";
+		String Sample1 = "BHEEM";
+		
+		if (sample.equals(Sample1)) {
+			System.out.println("True");
+		}
+		else {
+			System.out.println("false");
+		}
+		
+		
 		
 //		What's happening:
 //

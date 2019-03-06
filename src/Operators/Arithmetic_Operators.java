@@ -17,7 +17,7 @@ public class Arithmetic_Operators {
 		 b++;
 		 System.out.println("Value of 'b' after '++' Arithmetic operation is " + b);
 		 c--;
-		 System.out.println("Value of 'c' after '--' Arithmetic operation is " + c);
+		 
+		 
 		 }
-
 }
