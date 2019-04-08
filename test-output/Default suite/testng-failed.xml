@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumSessions.FluentWaitSample">
+      <class name="testNG.RetryExample">
         <methods>
-          <include name="fluentWaitMethod"/>
+          <include name="Test2"/>
         </methods>
-      </class> <!-- SeleniumSessions.FluentWaitSample -->
+      </class> <!-- testNG.RetryExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,10 +1,12 @@
 package SeleniumSessions;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class HtmlUnitDriverConcept {
@@ -27,32 +29,27 @@ public class HtmlUnitDriverConcept {
 			//--PhantomJS -- JavaScript
 		
 		
-		WebDriver driver = new HtmlUnitDriver();
+		HtmlUnitDriver driver = new HtmlUnitDriver();
 		
 		driver.manage().window().maximize(); //maximize window
 		driver.manage().deleteAllCookies(); //delete all the cookies
-		
+		driver.setJavascriptEnabled(true);
 		//dynamic wait
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		driver.get("http://www.freecrm.com");
+		driver.get("http://the-internet.herokuapp.com/checkboxes");
+		//driver.findElement(By.xpath("//input[@type='checkbox'][1]//following-sibling::text()[1]"));
 		
-		System.out.println("Before login, title is:==="+ driver.getTitle());
-		
-		driver.findElement(By.name("username")).sendKeys("naveenk");
-		driver.findElement(By.name("password")).sendKeys("test@123");
-		
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		
-		Thread.sleep(2000);
-		
-		System.out.println("after login, title is:==="+ driver.getTitle());
-		
-		
-		
-		
-		
+		List<WebElement> e = driver.findElements(By.xpath("//input[@type='checkbox']"));
+		for (WebElement webElement : e) {
+			if(webElement.isSelected()) {
+				JavascriptExecutor js = ((JavascriptExecutor) driver);
+			    String Checkboxname = (String)js.executeScript("return arguments[0].nextSibling.textContent;", webElement);
+			    System.out.println(Checkboxname +"Checkbox name");
+			}
+		}
+		driver.close();		
 		
 		
 	}

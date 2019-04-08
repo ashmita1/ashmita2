@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<!-- <suite name="Yahoo App Test Automation Suite">
-	<test name="Yahoo App Test">
+<suite name="Suite">
+
+    <test name="Practice Grouping">
+
+        <!-- <groups>
+
+	    <run>
+
+		<include name="Car" />
+
+	    </run>
+
+	</groups> -->
+
+	<classes>
+
+	    <class name="testNG.Sequencing" />
+	    <class name="testNG.Setup" />
+	    <class name="testNG.TestClass" />
+
+	</classes>
+
+    </test>
+
+</suite>
+
+<!-- <suite name="Parameterized Test">
+	<test name="Send params">
 
 		<parameter name="env" value="QA" />
 		<parameter name="browser" value="chrome" />
 		<parameter name="url" value="https://login.yahoo.com/" />
-		<parameter name="emailId" value="test@yahoo.com" />
-
-		<classes>
-			<class name="com.parameters.ParameterTest" />
-		</classes>
-
-	</test>
-</suite> -->
-
-<suite name="Parameterized Test">
-	<test name="Send params">
-
-		<parameter name="env" value="QA" />
-<!-- 		<parameter name="browser" value="chrome" />
- --><!-- 		<parameter name="url" value="https://login.yahoo.com/" />
- -->		<parameter name="path" value="/Users/bvennapureddy/Desktop/Shot1.png" />
+		<parameter name="path" value="/Users/bvennapureddy/Desktop/Shot1.png" />
 
 		<classes>
 			<class name="JavaSessions.Assignment1" />
@@ -30,4 +41,4 @@
 		</classes>
 
 	</test>
-</suite>
+</suite> -->

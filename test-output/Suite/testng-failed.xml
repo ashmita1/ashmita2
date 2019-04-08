@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Practice Grouping(failed)">
+    <parameter name="text" value="1"/>
+    <classes>
+      <class name="testNG.Iframe">
+        <methods>
+          <include name="iframe" invocation-numbers="0"/>
+          <include name="closeSelenium"/>
+          <include name="setupSelenium"/>
+        </methods>
+      </class> <!-- testNG.Iframe -->
+    </classes>
+  </test> <!-- Practice Grouping(failed) -->
+</suite> <!-- Failed suite [Suite] -->

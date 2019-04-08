@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test]" parallel="methods">
+  <test thread-count="5" name="Test Sample(failed)" parallel="methods">
+    <parameter name="text" value="Selenium Training"/>
+    <classes>
+      <class name="testNG.CheckBoxtesNGTest">
+        <methods>
+          <include name="DisappearingElementsTest"/>
+          <include name="iframe" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testNG.CheckBoxtesNGTest -->
+    </classes>
+  </test> <!-- Test Sample(failed) -->
+</suite> <!-- Failed suite [Test] -->

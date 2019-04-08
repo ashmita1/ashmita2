@@ -1,0 +1,15 @@
+<suite name="Suite">
+
+    <test name="demo">
+
+	<parameter name="text" value="1"/>
+
+		<classes>
+
+		    <class name="assignments.Iframe" />
+
+		</classes>
+
+    </test>
+
+</suite>

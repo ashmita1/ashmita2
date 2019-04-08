@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test" parallel="tests">
+	<test name='Test Sample'>
+	<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="testNG.CheckBoxtesNGTest" />
+		</classes>
+	</test>
+	
+	<test name='Test Sample_1'>
+	<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="testNG.CheckBoxtesNGTest" />
+		</classes>
+	</test>
+</suite>

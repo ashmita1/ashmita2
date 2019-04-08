@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+
+	<test name="Practice Grouping" >
+	<parameter name="text" value="1"/>
+		<classes>
+			<class name="testNG.CheckBoxtesNGTest" />
+		</classes>
+	</test>
+	
+</suite>
